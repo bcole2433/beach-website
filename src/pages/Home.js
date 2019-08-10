@@ -14,6 +14,7 @@ const Home = () => {
         </Banner>
         </Hero>
         <FeaturedRooms />
+
         </>
     )
 }
