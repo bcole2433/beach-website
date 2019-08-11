@@ -6,6 +6,7 @@ Data Management: Contentful Headless CMS
 Hosting: Netlify
 
 Other project specifics:
+Media Player: Bitmovin Player API
 Design: mix of styled components as well as simple CSS stylesheet
 
 ## Available Scripts
