@@ -38,7 +38,7 @@ const RoomFilter = ({ rooms }) => {
   // GET GUEST NUMBERS
   let guests = getUnique(rooms, "capacity");
   // mapping to return
-  guests = types.map((item, index) => {
+  guests = guests.map((item, index) => {
     return (
       <option value={item} key={index}>
         {item}
@@ -59,8 +59,9 @@ const RoomFilter = ({ rooms }) => {
             id="type"
             value={type}
             onChange={handleChange}
-          />
+          >
           {types}
+          </select>
         </div>
         {/*end select type */}
 
@@ -73,8 +74,9 @@ const RoomFilter = ({ rooms }) => {
             id="capacity"
             value={capacity}
             onChange={handleChange}
-          />
+          >
           {guests}
+          </select>
         </div>
         {/*end select type */}
 
